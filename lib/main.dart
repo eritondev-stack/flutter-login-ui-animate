@@ -1,8 +1,6 @@
-import 'package:animate/home/home.dart';
 import 'package:animate/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_socket_io/flutter_socket_io.dart';
-import 'package:flutter_socket_io/socket_io_manager.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,15 +17,15 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    socketIO = SocketIOManager().createSocketIO(
+/*     socketIO = SocketIOManager().createSocketIO(
       'http://10.0.0.107:3000',
       '/',
-    );
+    ); */
 
-    socketIO.init();
-    socketIO.subscribe('get', reviveMessage);
+    //socketIO.init();
+    //socketIO.subscribe('get', reviveMessage);
 
-    socketIO.connect();
+    //socketIO.connect();
   }
 
   reviveMessage(data) {

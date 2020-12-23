@@ -32,11 +32,9 @@ class _CategoryState extends State<Category> {
               Icons.arrow_forward_ios,
               size: 30,
             ),
-            onPressed: true
-                ? null
-                : () {
-                    print("Clicado");
-                  })
+            onPressed: () {
+              print("Clicado");
+            })
       ],
     );
   }
